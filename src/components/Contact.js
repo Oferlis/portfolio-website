@@ -1,3 +1,3 @@
 export default function Contact() {
-    return (<div>Contact me</div>)
+    return (<div className="flex h-96">Contact me</div>)
 }

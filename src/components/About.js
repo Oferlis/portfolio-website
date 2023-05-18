@@ -1,3 +1,3 @@
 export default function About() {
-    return (<div>About me</div>)
+    return (<div className="flex h-96">About me</div>)
 }

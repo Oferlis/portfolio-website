@@ -8,12 +8,14 @@ import './App.css';
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Navbar/>
-      <About/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
+    <main className="text-gray-400 bg-white body-font content-center">
+      <div className='w-11/12 bg-[#FFD495] flex flex-col rounded-lg items-center'>
+        <Navbar/>
+        <About/>
+        <Projects/>
+        <Skills/>
+        <Contact/>
+      </div>
     </main>
   );
 }

@@ -9,7 +9,8 @@ import './App.css';
 function App() {
   return (
     <main className="text-gray-400 bg-white body-font content-center">
-      <div className='w-11/12 bg-[#FFD495] flex flex-col rounded-lg items-center'>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet"/>
+      <div className= 'bg-[#FFD495] flex flex-col rounded-lg items-center mx-2 my-1'>
         <Navbar/>
         <About/>
         <Projects/>

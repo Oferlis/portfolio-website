@@ -1,9 +1,9 @@
 export default function Navbar() {
     return (
-    <header className="flex justify-start max-w-5xl font-montserrat mx-24 my-8" width="100%">
+    <header className="flex justify-start place-content-center max-w-5xl font-montserrat mx-36 mt-12 mb-16" width="100%">
         <img src='ofer_pic.png' alt="me" className="" width="100px" height="100px"/>
         <div className="flex flex-col mx-4 my-2">
-        <h1 className="py-2 text-2xl text-black">Ofer Lis</h1>
+        <h1 className="py-2 text-3xl text-black">Ofer Lis</h1>
         <div className="flex text-lg">
             <nav className="flex justify-around text-[#5e5e5e]">
                 <a className="flex pr-4 my-2" href="/about">About</a>

@@ -1,15 +1,19 @@
 export default function Navbar() {
     return (
-    <header className="flex flex-row w-full justify-between rounded-b-lg bg-black sticky top-0 text-white font-montserrat px-2">
-        <h3 className="py-2">Ofer Lis</h3>
-        <div className="flex justify-start items-end">
-            <nav className="flex justify-around">
-                <a className="flex px-4 py-2" href="/about">About</a>
-                <a className="flex px-4 py-2" href="/project">Projects</a>
-                <div className="flex px-4 border-4 rounded-full border-white py-1">
+    <header className="flex justify-start max-w-5xl font-montserrat mx-24 my-8" width="100%">
+        <img src='ofer_pic.png' alt="me" className="" width="100px" height="100px"/>
+        <div className="flex flex-col mx-4 my-2">
+        <h1 className="py-2 text-2xl text-black">Ofer Lis</h1>
+        <div className="flex text-lg">
+            <nav className="flex justify-around text-[#5e5e5e]">
+                <a className="flex pr-4 my-2" href="/about">About</a>
+                <a className="flex px-4 my-2" href="/skills">Skills</a>
+                <a className="flex px-4 my-2" href="/project">Projects</a>
+                <div className="flex px-4 my-2">
                     <a href="/contact">Say Hi</a>
                 </div>
             </nav>
+        </div>
             
         </div>
     </header>)

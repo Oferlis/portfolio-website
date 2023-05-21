@@ -590,11 +590,6 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -661,6 +656,10 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[\#EEEEFF1\] {
+  background-color: #EEEEFF1;
+}
+
 .bg-\[\#FFD495\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 212 149 / var(--tw-bg-opacity));
@@ -671,29 +670,9 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-\[\#EEEFF1\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  background-color: rgb(238 239 241 / var(--tw-bg-opacity));
 }
 
 .px-2 {
@@ -701,8 +680,19 @@ video {
   padding-right: 0.5rem;
 }
 
-.align-middle {
-  vertical-align: middle;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .font-montserrat {

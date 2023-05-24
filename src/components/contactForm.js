@@ -38,8 +38,8 @@ export default function ContactForm(props) {
                 <input type="email" name="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com"/>
                 </div>
                 <div className="flex flex-col">
-                    <label htmlFor="message">Message </label>
-                    <input className="h-24 rounded-lg" type="text" name="message" required />                
+                    <label htmlFor="message"> Message </label>
+                    <input className="h-24 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" type="text" name="message" required />                
                 </div>
                 <div className="flex flex-row-reverse">
                 <button type="submit" className="flex bg-[#99d1b8] rounded-xl justify-center w-16 my-2">

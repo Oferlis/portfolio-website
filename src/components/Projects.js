@@ -1,25 +1,94 @@
 export default function Projects() {
-    return (<div id="projects" className="flex flex-row h-96 items-center place-content-around my-4 md:mx-20 bg-[#c9e4eb] rounded-lg font-montserrat">
-        <div>My Projects</div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 scroll-m-0">
-            <div>
-                <img className="h-auto max-w-full  rounded-lg" src="logo192.png" alt="example project"/>
+    return (
+        <>
+            <div className="flex flex-row md:mx-20 mx-4 px-4 py-4 shadow-xl bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
+                <div className="text-2xl md:text-4xl mx-4 mb-4 w-1/4 ">
+                    My projects
+                </div>
+                <div className="gallery w-3/4">
+                    <div className="card">
+                        Card 1
+                    </div>
+                    <div className="card">
+                        Card 2
+                    </div>
+                    <div className="card">
+                        Card 3
+                    </div>
+                    <div className="card">
+                        Card 4
+                    </div>
+                    <div className="card">
+                        Card 5
+                    </div>
+                </div>
             </div>
-            <div>
-                <img className="h-auto max-w-full rounded-lg" src="logo192.png" alt="example project"/>
-            </div>
-            <div>
-                <img className="h-auto max-w-full rounded-lg" src="logo192.png" alt="example project"/>
-            </div>
-            <div>
-                <img className="h-auto max-w-full rounded-lg" src="logo192.png" alt="example project"/>
-            </div>
-            <div>
-                <img className="h-auto max-w-full rounded-lg" src="logo192.png" alt="example project"/>
-            </div>
-            <div>
-                <img className="h-auto max-w-full rounded-lg" src="logo192.png" alt="example project"/>
-            </div>
-        </div>
-    </div>)
+            <style jsx="true">
+                {`
+
+.gallery {
+    display: flex;
+    left: calc(50% - 330px);
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 220px;
+    height: 300px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        position: relative;
+        left: 0px;
+        width: 110px;
+        height: 150px;
+        padding: 8px;
+        background-color: white;
+        border-radius: 8px;
+        transition: 1s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+    }   
+}
+
+.card:nth-child(1) {
+    background-color: #B881FF;
+}
+
+.card:nth-child(2) {
+    background-color: #FF9950;
+}
+
+.card:nth-child(3) {
+    background-color: #AAEC8A;
+}
+
+.card:nth-child(4) {
+    background-color: #ED6A5E;
+}
+
+.card:not(:first-child) {
+    margin-left: -55px;
+}
+
+.card:hover {
+    transform: translateY(-16px);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card:hover ~ .card {
+    left: 55px;
+}
+                `}
+            </style>
+        </>
+   ) 
+
 }

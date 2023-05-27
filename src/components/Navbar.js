@@ -55,10 +55,14 @@ export default function Navbar() {
                     </li>
                     <li className="flex-grow"></li>
                     <li className="flex items-center">
-                        <img src="LinkedIn_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4 " alt="my LinkedIn profile"/>
+                        <a href="https://www.linkedin.com/in/ofer-lis/" target="_blank" rel="noreferrer noopener">
+                        <img src="LinkedIn_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4 " alt="my LinkedIn profile"/> 
+                        </a>
                     </li>
                     <li className="flex items-center">
+                        <a href="https://github.com/Oferlis" target="_blank" rel="noreferrer noopener">
                         <img src="github_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4" alt="my LinkedIn profile"/>
+                        </a>
                     </li>
                 </ul>
                 </div>

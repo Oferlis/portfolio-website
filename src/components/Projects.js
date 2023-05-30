@@ -2,8 +2,9 @@ export default function Projects() {
     return (
         <>
             <div className="flex flex-row md:mx-20 mx-4 px-4 py-4 shadow-xl bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
-                <div className="text-2xl md:text-4xl mx-4 mb-4 w-1/4 ">
-                    My projects
+                <div className="mx-4 mb-4 w-1/4 ">
+                    <h1 className="text-2xl md:text-4xl">My projects</h1>
+                    <p className="text-xl md:text-2xl">Bla bla bla</p>
                 </div>
                 <div className="gallery w-3/4">
                     <div className="card">
@@ -17,9 +18,6 @@ export default function Projects() {
                     </div>
                     <div className="card">
                         Card 4
-                    </div>
-                    <div className="card">
-                        Card 5
                     </div>
                 </div>
             </div>

@@ -16,8 +16,8 @@ function App() {
       <div className= 'flex flex-col'>
         <Navbar/>
         <About/>
-        <Projects/>
         <Skills/>
+        <Projects/>
         <Contact/>
         <Footer/>
       </div>

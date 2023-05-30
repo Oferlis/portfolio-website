@@ -9,5 +9,11 @@ export default function Contact() {
                 Let's get together 👋 
             </h2>
                 {isFormSubmitted ? (<div className="w-1/2">Form Sent! we'll be in touch!</div>) : <ContactForm setSubmitted={setFormSubmitted}/>}
-            </div>)
+            <style jsx="true">
+            {`
+                
+            `}
+            </style>
+            </div>
+            )
 }

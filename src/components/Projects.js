@@ -1,7 +1,7 @@
 export default function Projects() {
     return (
         <>
-            <div className="flex flex-row md:mx-20 mx-4 px-4 py-4 shadow-xl bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
+            <div id="projects" className="flex flex-row md:mx-20 mx-4 px-4 py-4 shadow-xl bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
                 <div className="mx-4 mb-4 w-1/4 ">
                     <h1 className="text-2xl md:text-4xl">My projects</h1>
                     <p className="text-xl md:text-2xl">Bla bla bla</p>

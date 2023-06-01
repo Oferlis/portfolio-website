@@ -27,8 +27,8 @@ export default function Navbar() {
             
     //     </div>
     // </header>
-        <nav className="border-gray-200 sticky top-0" >
-            <div id="home" className="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-start mx-auto p-4 font-montserrat">
+        <nav className="border-gray-200 sticky top-0 bg-gray-300" >
+            <div id="home" className="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-start mx-auto p-4 font-montserrat ">
                 <HashLink smooth to="/#home">
                 <img src="ofer_pic.png" alt="me" className="h-8 mr-3"/>
                 </HashLink>
@@ -53,15 +53,14 @@ export default function Navbar() {
                     <li>
                     <HashLink smooth to="/#contact" onClick={()=> setShowMenu('hidden')} className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Say Hi</HashLink>
                     </li>
-                    <li className="flex-grow"></li>
-                    <li className="flex items-center">
+                    <li>
                         <a href="https://www.linkedin.com/in/ofer-lis/" target="_blank" rel="noreferrer noopener">
                         <img src="LinkedIn_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4 " alt="my LinkedIn profile"/> 
                         </a>
                     </li>
-                    <li className="flex items-center">
+                    <li>
                         <a href="https://github.com/Oferlis" target="_blank" rel="noreferrer noopener">
-                        <img src="github_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4" alt="my LinkedIn profile"/>
+                        <img src="github_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-1 pr-4" alt="my LinkedIn profile"/>
                         </a>
                     </li>
                 </ul>

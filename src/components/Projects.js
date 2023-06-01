@@ -1,23 +1,25 @@
+import { Fade } from "react-awesome-reveal";
+
 export default function Projects() {
     return (
-        <>
-            <div id="projects" className="flex flex-row md:mx-20 mx-4 px-4 py-4 shadow-xl bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
+        <Fade delay={300} cascade >
+            <div id="projects" className="outdiv flex flex-row md:mx-20 mx-4 pr-4 py-4 shadow-xl bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
                 <div className="mx-4 mb-4 w-1/4 ">
-                    <h1 className="text-2xl md:text-4xl">My projects</h1>
-                    <p className="text-xl md:text-2xl">Bla bla bla</p>
+                    <h1 className="text-xl md:text-4xl">My projects</h1>
+                    <p className="text-lg md:text-2xl">Bla bla bla</p>
                 </div>
                 <div className="gallery w-3/4">
                     <div className="card">
-                        Card 1
+                        To be published...
                     </div>
                     <div className="card">
-                        Card 2
+                        To be published...
                     </div>
                     <div className="card">
-                        Card 3
+                        To be published...
                     </div>
                     <div className="card">
-                        Card 4
+                        To be published...
                     </div>
                 </div>
             </div>
@@ -25,25 +27,24 @@ export default function Projects() {
                 {`
 
 .gallery {
-    display: flex;
-    left: calc(50% - 330px);
+    display: flex;   
 }
 
 .card {
-    position: relative;
     left: 0px;
     width: 220px;
     height: 300px;
     padding: 8px;
+    margin-right: 2px;
     background-color: white;
     border-radius: 8px;
     transition: 1s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+    filter: blur(3px);
 }
 
 @media only screen and (max-width: 768px) {
     .card {
-        position: relative;
         left: 0px;
         width: 110px;
         height: 150px;
@@ -52,7 +53,10 @@ export default function Projects() {
         border-radius: 8px;
         transition: 1s ease-in-out;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
-    }   
+        filter: blur(3px);
+    }  
+    
+    
 }
 
 .card:nth-child(1) {
@@ -72,21 +76,22 @@ export default function Projects() {
 }
 
 .card:not(:first-child) {
-    margin-left: -55px;
+    
 }
 
 .card:hover {
     transform: translateY(-16px);
     font-weight: bold;
     cursor: pointer;
+    filter: blur(0px)
 }
 
 .card:hover ~ .card {
-    left: 55px;
+   
 }
                 `}
             </style>
-        </>
+        </Fade>
    ) 
 
 }

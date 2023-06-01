@@ -3,8 +3,7 @@ export default function About() {
             <div>
             <h1 className="md:text-4xl text-2xl mb-4 w-5/6">Hey, I'm Ofer.  👋 </h1>
             <p className="md:text-lg text-xs w-5/6">
-            I am a passionate software developer, currently working at Kyndryl<br></br>
-            with a deep understanding of various programming languages and frameworks.<br></br><br></br>
+            I am a passionate software developer, currently working at Kyndryl.<br></br>
 
             I believe in continuous learning and staying up-to-date with the latest industry trends,
             collaboration and effective communication are fundamental to my work.<br></br><br></br>
@@ -14,7 +13,7 @@ export default function About() {
             I would love to hear from you. 
             </p>
             </div>
-            <div className="w-1/3 mr-3">
+            <div className="w-1/6 mr-3">
                 <p>find a image</p>
             <img src="ofer_pic.png" alt="me" />
             </div>

@@ -27,7 +27,7 @@ export default function Navbar() {
             
     //     </div>
     // </header>
-        <nav className="border-gray-200 sticky top-0 bg-gray-300" >
+        <nav className="border-gray-200 absoulte w-full" >
             <div id="home" className="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-start mx-auto p-4 font-montserrat ">
                 <HashLink smooth to="/#home">
                 <img src="ofer_pic.png" alt="me" className="h-8 mr-3"/>

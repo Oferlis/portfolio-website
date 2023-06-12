@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 export default function Projects() {
     return (
         <Fade delay={300} cascade >
-            <div id="projects" className="flex flex-row md:mx-20 mx-4 pr-4 py-4 bg-[#c9e4eb] rounded-lg md:h-96 mt-4 font-montserrat items-center">
+            <div id="projects" className="flex flex-row md:mx-20 mx-4 pr-4 py-4 bg-[#c9e4eb] shadow-xl rounded-lg md:h-96 mt-4 font-montserrat items-center">
                 <div className="mx-4 mb-4 w-1/4 ">
                     <h1 className="text-xl md:text-4xl">My projects</h1>
                     <p className="text-lg md:text-2xl">Bla bla bla</p>

@@ -1,6 +1,6 @@
 export default function About() {
     return (<div id="about" className="flex flex-row md:mx-20 mx-4 px-6 py-12 shadow-xl bg-[#c9e4eb] space-around rounded-lg md:h-96 items-start mt-4 font-montserrat">
-            <div className="">
+            <div>
             <h1 className="md:text-4xl text-2xl mb-4 w-5/6">Hey, I'm Ofer.  👋 </h1>
             <p className="md:text-lg text-xs w-5/6">
             I am a passionate software developer, currently working at Kyndryl.<br></br>

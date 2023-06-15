@@ -15,7 +15,7 @@ export default function About() {
             </div>
             <div className="w-1/6 mr-3">
                 <p>find a image</p>
-            <img src="ofer_pic.png" alt="me" />
+            <img src={process.env.PUBLIC_URL + "/images/ofer_pic.png"} alt="me" />
             </div>
         
     </div>)

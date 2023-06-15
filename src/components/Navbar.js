@@ -13,7 +13,7 @@ export default function Navbar() {
         <nav className="border-gray-200 absoulte w-full" >
             <div id="home" className="max-w-screen-xl flex flex-wrap items-center justify-between md:justify-start mx-auto p-4 font-montserrat ">
                 <HashLink smooth to="/#home">
-                <img src="/images/ofer_pic.png" alt="me" className="h-8 mr-3"/>
+                <img src={process.env.PUBLIC_URL + "/images/ofer_pic.png"} alt="me" className="h-8 mr-3"/>
                 </HashLink>
                 <button onClick={isShowMenu} type="button" className="inline-flex md:items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                 <span className="sr-only">Open main menu</span>
@@ -38,12 +38,12 @@ export default function Navbar() {
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/ofer-lis/" target="_blank" rel="noreferrer noopener">
-                        <img src="/images/LinkedIn_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4 " alt="my LinkedIn profile"/> 
+                        <img src={process.env.PUBLIC_URL + "/images/LinkedIn_icon.svg"} className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4 " alt="my LinkedIn profile"/> 
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Oferlis" target="_blank" rel="noreferrer noopener">
-                        <img src="./portfolio-website/github_icon.svg" className="md:h-6 h-10 block py-2 md:py-0 md:pl-1 pl-3 pr-4" alt="my Github profile"/>
+                        <img src={process.env.PUBLIC_URL + "/images/github_icon.svg"} className="md:h-6 h-10 block py-2 md:py-0 md:pl-1 pl-3 pr-4" alt="my Github profile"/>
                         </a>
                     </li>
                 </ul>

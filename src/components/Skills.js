@@ -11,7 +11,7 @@ export default function Skills() {
                     <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> Docker</p>
                     <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> Ansible</p>
                     <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> VMware</p>
-                    <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> Django</p>
+                    <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> TailWind css</p>
                     <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> Django</p>
                     <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> Django</p>
                     <p className="px-4 mr-0.5 mb-1 py-1.5 text-sm font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-2xl "> Django</p>

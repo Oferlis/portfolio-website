@@ -21,7 +21,7 @@ export default function ContactForm(props) {
 
 
     return (
-            <form ref={form} onSubmit={sendEmail} className="flex flex-col mx-4 w-1/2">
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col ">
                 <div className="flex flex-col">
                 <label htmlFor="website-admin" className="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
                 <div className="relative mb-6">

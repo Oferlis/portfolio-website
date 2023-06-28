@@ -38,8 +38,6 @@
 }
 
 .div-ex {
-  display: flex;
-  flex-direction: row;
   margin-left: 1rem/* 16px */;
   margin-right: 1rem/* 16px */;
   margin-top: 1rem;
@@ -58,5 +56,42 @@
 
         height: auto;
     
+  }
 }
+
+h1 {
+  font-size: 1.25rem/* 20px */;
+  line-height: 1.75rem/* 28px */;
+  
+  @media (min-width: 768px) {  
+    font-size: 3.75rem/* 60px */;
+    line-height: 1;
+    width: 25%;
+  }
+}
+
+.skills-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-head {
+  margin: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }

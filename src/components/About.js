@@ -1,5 +1,5 @@
 export default function About() {
-    return (<div id="about" className="div-ex">
+    return (<div id="about" className="div-ex about-div">
             <div className="my-auto py-4">
             <h1 className="md:text-4xl text-2xl mb-4 w-5/6">Hey, I'm Ofer.  👋 </h1>
             <p className="md:text-lg text-xs w-5/6">

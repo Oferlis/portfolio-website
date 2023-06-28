@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.div-ex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem/* 16px */;
+  margin-right: 1rem/* 16px */;
+  margin-top: 1rem;
+  padding-left: 1.5rem/* 24px */;
+  padding-right: 1.5rem/* 24px */;
+  border-radius: 0.5rem;
+  align-items: flex-start;
+  font-family: Montserrat;
+  
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 228 235 / var(--tw-bg-opacity));
+
+
+  @media (min-width: 768px) {
+        width: 100%;
+
+        height: auto;
+    
+}
+}

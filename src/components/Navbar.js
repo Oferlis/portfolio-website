@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         <nav className="border-gray-200 absoulte w-full" >
-            <div id="home" className="flex flex-wrap items-center justify-between md:justify-start md:mx-24 mx-auto p-4 font-montserrat ">
+            <div id="home" className="flex flex-wrap items-center justify-between md:justify-start mx-auto p-4 font-montserrat ">
                 <HashLink smooth to="/#home">
                 <img src={process.env.PUBLIC_URL + "/images/ofer_pic.png"} alt="me" className="h-8 mr-3"/>
                 </HashLink>

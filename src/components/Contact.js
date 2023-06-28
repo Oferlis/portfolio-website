@@ -4,7 +4,7 @@ import ContactForm from "./contactForm";
 export default function Contact() {
     const [isFormSubmitted, setFormSubmitted] = useState(false)
 
-    return (<div id="contact" className="flex h-96 flex-row items-center place-content-around md:mx-40 my-4 bg-[#c9e4eb] rounded-lg shadow-xl font-montserrat">
+    return (<div id="contact" className="div-ex">
             <h2 className="text-2xl md:text-4xl mx-4 mb-4 w-1/4">
                 Let's get together <br></br> ☕
             </h2>

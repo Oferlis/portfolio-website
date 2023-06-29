@@ -175,10 +175,14 @@ h2 {
   border-radius: 10px;
 }
 
-.proj-list-item:hover {
+.proj-list-item:hover{
   font-weight: bold; 
   cursor: pointer;
   background-color: #e963e9;
+}
+
+.selected {
+  font-weight: bold !important;
 }
 
 .form-div {

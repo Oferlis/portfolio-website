@@ -72,7 +72,7 @@ h1 {
 
 .skills-div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .projects-div {
@@ -92,6 +92,33 @@ h1 {
 
 .skills-head {
   margin: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 0.5rem;
 }
+
+.proj-display {
+  background-image: linear-gradient(to right, #9b84e0, #6633ff);
+  height: 25rem;
+  width: 35rem;
+  margin: 2rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.proj-list-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  font-weight: normal; /* Set the default font-weight */
+  transition: font-weight 0.3s ease; /* Add a transition for a smooth effect */
+  transition: background-color 0.3 ease;
+  background-color: #ee82ee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: black;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+.proj-list-item:hover {
+  font-weight: bold; 
+  cursor: pointer;
+  background-color: #e963e9;
+}
+

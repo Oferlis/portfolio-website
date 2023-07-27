@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState("hidden");
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   const isShowMenu = () => {
     if (showMenu === "hidden") setShowMenu("");
@@ -10,8 +19,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <div id="home" className="">
+    <nav className={`navbar + ${sticky ? "sticky" : ""}`}>
+      <div id="home" className="row-div nav-div">
         <HashLink smooth to="/#home">
           <img
             src={process.env.PUBLIC_URL + "/images/ofer_pic.png"}
@@ -22,7 +31,7 @@ export default function Navbar() {
         <button
           onClick={isShowMenu}
           type="button"
-          className="inline-flex md:items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:rin"
+          className="inline-flex md:items-center p-2text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:rin"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -129,7 +138,6 @@ export default function Navbar() {
               >
                 <img
                   src={process.env.PUBLIC_URL + "/images/github_icon.svg"}
-                  className="md:h-6 h-10 block py-2 md:py-0 md:pl-1 pl-3 pr-4"
                   alt="my Github profile"
                 />
               </a>

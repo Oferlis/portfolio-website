@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,26 +13,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .div-ex {
-  margin-left: 1rem/* 16px */;
-  margin-right: 1rem/* 16px */;
-  margin-top: 1rem;
   padding-left: 1.5rem/* 24px */;
   padding-right: 1.5rem/* 24px */;
-  border-radius: 0.5rem;
   align-items: flex-start;
   font-family: Montserrat;
   
@@ -60,28 +32,79 @@
 }
 
 .navbar{
-  flex-direction: column;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #172D13;
   color: white;
   font-family: sans-serif;
   width: 100%;
-  position: fixed;
+  height: 70px;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-div {
+  align-items: center;
+  margin-left: 10rem;
+  
 }
 
 .navbar-item {
   display: block;
-  font-weight: 600;
-
+  font-weight: 200;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.2vh;
 }
+
+.gh-icon {
+  border-width: 1rem;
+  border-color: white;
+}
+
+
 .about-div {
   background-color: #172D13;
   color: white;
+  height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 200;
 }
 
+.about-par{
+  font-size: 1.5rem;
+}
+
+.about-h1 {
+  font-weight: 700;
+  font-size: 10vh;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  width: 600px;
+  height: 600px;
+}
+
+.about-button {
+  margin-top: 1rem;
+  padding: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  border-radius: 35px;
+  background-color: #D76F30; 
+}
+
+.aside-1 {
+  background-color: white;
+}
 h1 {
   font-size: 1.25rem/* 20px */;
   line-height: 1.75rem/* 28px */;

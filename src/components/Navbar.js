@@ -10,11 +10,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="border-gray-200 w-full">
-      <div
-        id="home"
-        className="flex flex-wrap items-center justify-between md:justify-start mx-auto md:pl-1 md:pr-0 pl-6 pt-4 pr-6 font-montserrat "
-      >
+    <nav className="navbar">
+      <div id="home" className="">
         <HashLink smooth to="/#home">
           <img
             src={process.env.PUBLIC_URL + "/images/ofer_pic.png"}
@@ -25,7 +22,7 @@ export default function Navbar() {
         <button
           onClick={isShowMenu}
           type="button"
-          className="inline-flex md:items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex md:items-center p-2 ml-3 text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:rin"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -54,7 +51,7 @@ export default function Navbar() {
                 smooth
                 to="/#home"
                 onClick={() => setShowMenu("hidden")}
-                className="block py-2 pl-3 pr-4 bg-blue-400 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                className="navbar-item"
                 aria-current="page"
               >
                 {" "}
@@ -66,7 +63,7 @@ export default function Navbar() {
                 smooth
                 to="/#about"
                 onClick={() => setShowMenu("hidden")}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="navbar-item"
               >
                 About
               </HashLink>
@@ -74,11 +71,11 @@ export default function Navbar() {
             <li>
               <HashLink
                 smooth
-                to="/#skills"
+                to="/#technologies"
                 onClick={() => setShowMenu("hidden")}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="navbar-item"
               >
-                Skills
+                Technologies
               </HashLink>
             </li>
             <li>
@@ -86,7 +83,7 @@ export default function Navbar() {
                 smooth
                 to="/#projects"
                 onClick={() => setShowMenu("hidden")}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="navbar-item"
               >
                 Projects
               </HashLink>
@@ -96,7 +93,7 @@ export default function Navbar() {
                 smooth
                 to="/#blog-posts"
                 onClick={() => setShowMenu("hidden")}
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="navbar-item"
               >
                 Blog posts
               </HashLink>
@@ -106,7 +103,7 @@ export default function Navbar() {
                 smooth
                 to="/#contact"
                 onClick={() => setShowMenu("hidden")}
-                className="block py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="navbar-item"
               >
                 Say Hi
               </HashLink>

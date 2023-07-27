@@ -1,14 +1,15 @@
 export default function About() {
   return (
-    <div id="about" className="div-ex row-div">
-      <div className="my-auto py-4">
+    <div id="about" className="div-ex row-div about-div">
+      <div className="my-auto mx-auto py-4">
         <h1 className="md:text-4xl text-2xl mb-4 w-5/6">Hey, I'm Ofer. 👋 </h1>
         <p className="md:text-lg text-xs w-5/6">
           I am a passionate software developer, currently working at Kyndryl.
           <br />
           I believe in continuous learning and staying up-to-date with the
-          latest industry trends, collaboration and effective communication are
-          fundamental to my work.
+          latest industry trends,
+          <br /> collaboration and effective communication are fundamental to my
+          work.
           <br />
           <br />
           In my spare time I contribute to opensource projects and practice

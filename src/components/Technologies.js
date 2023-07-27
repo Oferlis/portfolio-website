@@ -2,8 +2,14 @@ import Logo from "./Logo";
 
 export default function Technologies() {
   return (
-    <div id="technologies" className="div-ex">
-      <h1 className="skills-head">Technologies</h1>
+    <div id="technologies" className="row-div tech-div">
+      <div className="col-div">
+        <h1 className="tech-head">
+          Technologies
+          <br />I use
+        </h1>
+        <h2 className="tech-h2">Constantly enchanching my skills</h2>
+      </div>
       <div className="logo-div">
         <Logo src={process.env.PUBLIC_URL + "/svgs/django.svg"} id="1" />
         <Logo src={process.env.PUBLIC_URL + "/svgs/react.svg"} id="2" />
@@ -16,6 +22,8 @@ export default function Technologies() {
         <Logo src={process.env.PUBLIC_URL + "/svgs/nodejs.svg"} id="9" />
         <Logo src={process.env.PUBLIC_URL + "/svgs/ruby.svg"} id="10" />
         <Logo src={process.env.PUBLIC_URL + "/svgs/typescript.svg"} id="11" />
+        <Logo src={process.env.PUBLIC_URL + "/svgs/postgresql.svg"} id="12" />
+        <Logo src={process.env.PUBLIC_URL + "/svgs/mongodb.svg"} id="13" />
       </div>
     </div>
   );

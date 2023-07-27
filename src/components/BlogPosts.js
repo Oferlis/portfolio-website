@@ -1,6 +1,6 @@
 export default function BlogPosts() {
   return (
-    <div id="blog-posts" className="div-ex row-div">
+    <div id="blog-posts" className="div-ex row-div blog-div">
       <h1 className="skills-head">Blog posts</h1>
       <div className="grid-container">
         <div

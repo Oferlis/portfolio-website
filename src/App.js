@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import Contact from "./components/Contact";
-import Projects from "./components/Projects";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import Contact from "./sections/Contact";
+import Projects from "./sections/Projects";
+import Navbar from "./sections/Navbar";
+import About from "./sections/About";
+import Footer from "./sections/Footer";
 import "./App.css";
-import BlogPosts from "./components/BlogPosts";
-import Technologies from "./components/Technologies";
+import BlogPosts from "./sections/BlogPosts";
+import Technologies from "./sections/Technologies";
 
 function App() {
   const [showButton, setShowButton] = useState(false);

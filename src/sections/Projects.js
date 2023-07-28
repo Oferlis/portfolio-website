@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ProjectDisplay from "./ProjectDisplay";
+import ProjectDisplay from "../components/ProjectDisplay";
 import { readingList } from "../projects-items/readingList";
 import { overlay } from "../projects-items/overlay";
 import { sharkio } from "../projects-items/sharkio";

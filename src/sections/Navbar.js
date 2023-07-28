@@ -51,16 +51,15 @@ export default function Navbar() {
           </svg>
         </button>
         <div
-          className={showMenu + " w-full md:block md:w-auto"}
+          className={showMenu + " w-full md:block items-center"}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 md:mx-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+          <ul className="nav-list">
             <li>
               <HashLink
                 smooth
                 to="/#home"
                 onClick={() => setShowMenu("hidden")}
-                className="navbar-item"
                 aria-current="page"
               >
                 {" "}

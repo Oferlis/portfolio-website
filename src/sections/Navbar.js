@@ -21,12 +21,13 @@ export default function Navbar() {
   return (
     <nav className={`navbar + ${sticky ? "sticky" : ""}`}>
       <div id="home" className="row-div nav-div">
-        <HashLink smooth to="/#home">
+        <HashLink smooth to="/#home" className="row-div align-center">
           <img
-            src={process.env.PUBLIC_URL + "/images/ofer_pic.png"}
+            src={process.env.PUBLIC_URL + "/svgs/OL-logo.svg"}
             alt="me"
             className="h-8 mr-3"
           />
+          <p className="name-logo">Ofer Lis</p>
         </HashLink>
         <button
           onClick={isShowMenu}
@@ -50,10 +51,7 @@ export default function Navbar() {
             ></path>
           </svg>
         </button>
-        <div
-          className={showMenu + " w-full md:block items-center"}
-          id="navbar-default"
-        >
+        <div className={showMenu + "md:block items-center"} id="navbar-default">
           <ul className="nav-list">
             <li>
               <HashLink
@@ -62,8 +60,8 @@ export default function Navbar() {
                 onClick={() => setShowMenu("hidden")}
                 aria-current="page"
               >
-                {" "}
-                Home{" "}
+                <em>#</em>
+                Home
               </HashLink>
             </li>
             <li>
@@ -73,7 +71,7 @@ export default function Navbar() {
                 onClick={() => setShowMenu("hidden")}
                 className="navbar-item"
               >
-                About
+                <em>#</em>About
               </HashLink>
             </li>
             <li>
@@ -83,7 +81,7 @@ export default function Navbar() {
                 onClick={() => setShowMenu("hidden")}
                 className="navbar-item"
               >
-                Technologies
+                <em>#</em>Technologies
               </HashLink>
             </li>
             <li>
@@ -93,7 +91,7 @@ export default function Navbar() {
                 onClick={() => setShowMenu("hidden")}
                 className="navbar-item"
               >
-                Projects
+                <em>#</em>Projects
               </HashLink>
             </li>
             <li>
@@ -103,7 +101,7 @@ export default function Navbar() {
                 onClick={() => setShowMenu("hidden")}
                 className="navbar-item"
               >
-                Blog posts
+                <em>#</em>Blog_posts
               </HashLink>
             </li>
             <li>
@@ -113,7 +111,7 @@ export default function Navbar() {
                 onClick={() => setShowMenu("hidden")}
                 className="navbar-item"
               >
-                Say Hi
+                <em>#</em>Say_hi
               </HashLink>
             </li>
             <li>

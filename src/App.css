@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .div-ex {
   padding-left: 1.5rem/* 24px */;
   padding-right: 1.5rem/* 24px */;
@@ -35,15 +24,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #fefffc;
-  color: #00494d;
+  background-color: #1A2238;
+  color: #deeff0;
   font-family: sans-serif;
   width: 100%;
   height: 70px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-  border-color: #ace8d9;
-  border-width: 1px;
   }
 
 .sticky {
@@ -85,7 +72,7 @@
   width: 0;
   border-radius: 25px;
   height: 4px; /* Adjust this value to control the thickness of the underscore */
-  background-color: #ff8a44; /* Adjust this value to change the color of the underscore */
+  background-color: #FF6A3D; /* Adjust this value to change the color of the underscore */
   transition: width 0.3s ease-in-out; /* Adjust the animation speed as needed */
 }
 
@@ -101,15 +88,19 @@
 
 
 .about-div {
-  background-color: #172D13;
-  color: white;
-  height: 95vh;
+  background-color: #1A2238;
+  color: #032031;
+  height: 90vh;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 200;
 }
 
+
+
 .about-par{
   font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #d2dada;
 }
 
 .about-h1 {
@@ -117,6 +108,7 @@
   font-size: 4rem;
   width: auto;
   margin-bottom: 2rem;
+  color: #9DAAF2;
 }
 
 .about-image {
@@ -130,7 +122,7 @@
   padding-right: 2rem;
   padding-left: 2rem;
   border-radius: 35px;
-  background-color: #D76F30; 
+  background-color: #FF6A3D; 
 }
 
 .aside-1 {
@@ -184,6 +176,7 @@ h2 {
 }
 .tech-div {
   height: 70vh;
+  background-color: #d2dada;
 }
 
 .contact-div {
@@ -191,6 +184,7 @@ h2 {
   flex-direction: row;
   text-align: center;
   align-items: center;
+  background-color: #d2dada;
 }
 
 .tech-head {
@@ -211,13 +205,13 @@ h2 {
 }
 
 .proj-div {
-  background-color: #eeca5f;
+  background-color: #F4DB7D;
   align-items: center;
   justify-content: center;
 }
 
 .blog-div {
-  background-color: #eeca5f;
+  background-color: #F4DB7D;
   align-items: center;
   justify-content: center;
 }
@@ -372,4 +366,16 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 0.5rem;
 
+}
+
+.color1 {
+  fill: #007bff;
+}
+
+.color2 { 
+  fill: #1A2238;
+}
+
+.separator {
+  background-color: #d2dada;
 }

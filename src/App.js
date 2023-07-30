@@ -8,6 +8,7 @@ import "./App.css";
 import BlogPosts from "./sections/BlogPosts";
 import Technologies from "./sections/Technologies";
 import SideButtons from "./components/sideButtons";
+import Skills from "./sections/Skills";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <div className="">
           <Navbar />
           <About />
-          <section id="third">
+          {/* <section id="third">
             <svg
               class="separator"
               xmlns="http://www.w3.org/2000/svg"
@@ -36,9 +37,9 @@ function App() {
                 />
               </g>
             </svg>
-          </section>
+          </section> */}
 
-          <Technologies />
+          <Skills />
           <Projects />
           <BlogPosts />
           <Contact />

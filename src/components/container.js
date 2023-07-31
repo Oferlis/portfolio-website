@@ -4,7 +4,7 @@ const Container = (props) => {
       <div className="container">{props.headline}</div>
       <ul className="container">
         {props.items.map((item) => {
-          return <li>{item}</li>;
+          return <li key={item}>{item}</li>;
         })}
       </ul>
     </div>

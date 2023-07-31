@@ -6,8 +6,8 @@ const Skills = () => {
   return (
     <div className="skills">
       <SectionSeperator sectionName="Skills" />
-      <Cube />
       <div className="placeholder">
+        <Cube />
         <div className="boxes">
           <Container
             headline="Languages"

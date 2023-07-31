@@ -1,16 +1,24 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import { RoundedBox } from "@react-three/drei";
 
 const CubeMesh = (props) => {
   const cubeRef = useRef();
 
-  useFrame(() => (cubeRef.current.rotation.x += 0.01));
+  useFrame(() => (cubeRef.current.rotation.y += 0.01));
 
   return (
-    <mesh {...props} ref={cubeRef}>
-      <boxGeometry args={[2, 2, 2]} />
-      <meshBasicMaterial color={"orange"} />
-    </mesh>
+    <RoundedBox
+      {...props}
+      ref={cubeRef}
+      args={[3, 3, 3]}
+      radius={0.05}
+      smoothness={4}
+      creaseAngle={0.4}
+      {...props}
+    >
+      <meshPhongMaterial color="#BDFFEF" wireframe />
+    </RoundedBox>
   );
 };
 
@@ -19,7 +27,7 @@ const Cube = (props) => {
     <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
-      <CubeMesh position={[-1.2, 0, 0]} />
+      <CubeMesh position={[0, 0, 0]} />
     </Canvas>
   );
 };

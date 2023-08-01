@@ -532,7 +532,7 @@ h2 {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
 
 }
@@ -572,7 +572,7 @@ h2 {
   }
 
 .proj-item-body h3 {
-  text-align: start;
+  text-align: flex-start;
   color: var(--gray, #BDFFEF);
   font-family: Fira Code;
   font-size: 16px;

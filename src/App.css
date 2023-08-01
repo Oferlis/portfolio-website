@@ -502,7 +502,7 @@ h2 {
 }
 
 .placeholder {
-  align-self: start;
+  align-self: flex-start;
   justify-content: flex-end;
   display: flex;
   flex-direction: row;

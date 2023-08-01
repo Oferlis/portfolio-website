@@ -251,9 +251,10 @@ h2 {
 }
 
 .proj-div {
-  background-color: #F4DB7D;
+  background-color: #00494D;
   align-items: center;
   justify-content: center;
+  height: 80vh;
 }
 
 .blog-div {
@@ -263,14 +264,11 @@ h2 {
 }
 
 .proj-display {
-  background-image: linear-gradient(to right, #9b84e0, #6633ff);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-color: black;
+  border-color: #BDFFEF;
   border-width: 1px;
-  height: 25rem;
-  width: 35rem;
-  margin: 2rem;
-  border-radius: 25px;
+  height: 20rem;
+  width: 15rem;
   text-align: center;
 
   /* how should I display this in mobile???*/
@@ -278,25 +276,6 @@ h2 {
     height: 10rem;
     width: 10rem;
   }
-}
-
-.proj-list-item {
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-  font-weight: normal; /* Set the default font-weight */
-  transition: font-weight 0.3s ease; /* Add a transition for a smooth effect */
-  transition: background-color 0.3 ease;
-  background-color: #ee82ee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-color: black;
-  border-width: 1px;
-  border-radius: 10px;
-}
-
-.proj-list-item:hover{
-  font-weight: bold; 
-  cursor: pointer;
-  background-color: #e963e9;
 }
 
 .selected {
@@ -531,11 +510,40 @@ h2 {
   gap: 15px
 }
 
-.free-shapes {
-  height: auto;
+.cube {
+  width: 200px;
+}
+
+.proj-container {
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.proj-img { 
+  width: 100%;
+  height: 40%;
+  border-bottom: 1px solid var(--gray, #BDFFEF);
+  
+}
+
+.proj-att {
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid var(--gray, #BDFFEF);
 
 }
 
-.cube {
-  width: 200px;
+.single-att {
+  color: var(--gray, #BDFFEF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

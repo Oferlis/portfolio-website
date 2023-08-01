@@ -6,7 +6,6 @@ import About from "./sections/About";
 import Footer from "./sections/Footer";
 import "./App.css";
 import BlogPosts from "./sections/BlogPosts";
-import Technologies from "./sections/Technologies";
 import SideButtons from "./components/sideButtons";
 import Skills from "./sections/Skills";
 

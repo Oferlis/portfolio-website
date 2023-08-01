@@ -150,7 +150,7 @@
 }
 
 .about-image {
-  width: 70vh;
+  width: 60vh;
   height: 70vh;
 }
 
@@ -281,11 +281,34 @@ h2 {
 }
 
 .form-div {
-  justify-content: center;
-  width: 60%;
+  width: 100%;
   margin: 1rem;
 }
 
+.form-div label {
+  color: #BDFFEF;
+  margin-top: 1rem;
+  
+}
+
+.form-div input {
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid #BDFFEF;
+}
+
+.form-div button {
+  background-color: #BDFFEF;
+  border-radius: 25px;
+  padding: 0.25rem;
+  margin-top: 1rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+
+}
 .card {
   width: 320px;
   height: 200px;
@@ -579,5 +602,25 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;  
+  }
+
+  .footer {
+    width: 100%;
+    align-items: flex-start;
+    background-color: #00494D;
+  }
+
+  .footer hr {
+    margin-top: 1rem/* 16px */;
+    margin-bottom: 1rem/* 16px */;
+    border-color: #BDFFEF
+  }
+
+  .footer span {
+    display: block;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+    color: #BDFFEF;
+    text-align: center;
   }
 

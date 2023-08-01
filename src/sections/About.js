@@ -5,7 +5,7 @@ export default function About() {
     <div id="about" className="div-ex row-div about-div">
       <div className="my-auto mx-auto py-4">
         <h1 className="about-h1">
-          <em>Fullstack Developer</em> building web solutions
+          <em>A full-stack Developer</em> building web solutions
           <br />
           with a passion for
           <em> innovation</em> & <em>problem-solving.</em>

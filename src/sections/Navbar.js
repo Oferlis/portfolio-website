@@ -77,11 +77,11 @@ export default function Navbar() {
             <li>
               <HashLink
                 smooth
-                to="/#technologies"
+                to="/#skills"
                 onClick={() => setShowMenu("hidden")}
                 className="navbar-item"
               >
-                <em>#</em>Technologies
+                <em>#</em>Skills
               </HashLink>
             </li>
             <li>

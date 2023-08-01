@@ -4,7 +4,7 @@ import Cube from "../components/cube";
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div id="skills" className="skills">
       <SectionSeperator sectionName="Skills" />
       <div
         className="row-div"
@@ -32,12 +32,12 @@ const Skills = () => {
           </div>
           <div className="boxes">
             <Container
-              headline="Frameworks"
-              items={["React, Django", "NodeJS, Vue"]}
-            />
-            <Container
               headline="Others"
               items={["HTML, CSS", "REST APIs, Jinja"]}
+            />
+            <Container
+              headline="Frameworks"
+              items={["React, Django", "NodeJS, Vue", "Express.js"]}
             />
           </div>
         </div>

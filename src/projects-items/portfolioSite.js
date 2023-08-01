@@ -1,7 +1,9 @@
 import genericProject from "./genericProject";
 
-const head = ["tech1", "tech2", "tech3"];
-const body = "An app for lililili";
-const bgImg = "";
+const tech = ["React", "Tailwind", "Figma", "Deployment"];
+const body = "Portfolio site";
+const img = "";
+const alt = "Portfolio site";
+const desc = "My portfolio site, you're here!";
 
-export const portfolioSite = new genericProject(head, body, bgImg);
+export const portfolioSite = new genericProject(tech, body, img, alt, desc);

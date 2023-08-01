@@ -1,8 +1,9 @@
 export default class genericProject {
-  constructor(head, body, img, alt) {
-    this.head = head;
+  constructor(tech, body, img, alt, desc) {
+    this.tech = tech;
     this.body = body;
     this.img = img;
     this.alt = alt;
+    this.desc = desc;
   }
 }

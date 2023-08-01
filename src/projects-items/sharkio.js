@@ -1,7 +1,9 @@
 import genericProject from "./genericProject";
 
-const head = ["tech1", "tech2", "tech3"];
-const body = "An app for lililili";
-const bgImg = "";
+const tech = ["React", "NodeJS", "Express", "Docker"];
+const body = "Sharkio";
+const img = "";
+const alt = "sharkio logo";
+const desc = "Developer tool, helps developers to track services requests";
 
-export const sharkio = new genericProject(head, body, bgImg);
+export const sharkio = new genericProject(tech, body, img, alt, desc);

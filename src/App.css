@@ -188,9 +188,6 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-left: 1rem/* 16px */;
-  margin-right: 1rem/* 16px */;
-  margin-bottom: 1rem/* 16px */;
   width: auto;
 
   @media (min-width: 768px) {
@@ -227,10 +224,9 @@ h2 {
 
 .contact-div {
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  background-color: #d2dada;
+  width: 100%;
+  flex-direction: column;
+  background-color: #00494D;
 }
 
 .tech-head {
@@ -254,13 +250,15 @@ h2 {
   background-color: #00494D;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: auto;
+  padding-bottom: 50px;
 }
 
 .blog-div {
-  background-color: #F4DB7D;
+  background-color: #00494D;
   align-items: center;
   justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .proj-display {
@@ -283,6 +281,7 @@ h2 {
 }
 
 .form-div {
+  justify-content: center;
   width: 60%;
   margin: 1rem;
 }
@@ -337,11 +336,11 @@ h2 {
 }
 
 .grid-container {
+  justify-items: center;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 10px; /* Adjust the gap between divs as needed */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  gap: 10px;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -533,17 +532,52 @@ h2 {
   align-items: flex-start;
   gap: 8px;
   align-self: stretch;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
-  border-bottom: 1px solid var(--gray, #BDFFEF);
 
 }
 
 .single-att {
-  color: var(--gray, #BDFFEF);
+  color: #BDFFEF;
   font-family: Fira Code;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: color ease-in-out;
+  cursor:default;
 }
+
+.single-att:hover {
+  color: #FFFFED
+}
+
+.proj-item-body {
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;  
+  border-top: 1px solid var(--gray, #BDFFEF);
+}
+
+.proj-item-body h2 {
+  color: var(--white, #FFFFED);
+  font-family: Fira Code;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+
+.proj-item-body h3 {
+  text-align: start;
+  color: var(--gray, #BDFFEF);
+  font-family: Fira Code;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;  
+  }
+

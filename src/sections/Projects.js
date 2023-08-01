@@ -49,7 +49,7 @@ export default function Projects() {
   // );
 
   return (
-    <div className="proj-div">
+    <div id="projects" className="proj-div">
       <SectionSeperator sectionName="Projects" />
       <div className="row-div proj-container">
         <ProjectDisplay content={readingList} />

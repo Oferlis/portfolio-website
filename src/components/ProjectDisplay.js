@@ -13,15 +13,19 @@ export default function ProjectDisplay(content) {
             display: "flex",
             flexDirection: "row",
             gap: "8px",
-            justifyContent: "space-around",
+            justifyContent: "start",
+            flexWrap: "wrap",
           }}
         >
-          {content.content.head.map((item) => {
+          {content.content.tech.map((item) => {
             return <li className="single-att">{item}</li>;
           })}
         </ul>
       </div>
-      <div>{content.content.body}</div>
+      <div className="proj-item-body">
+        <h2>{content.content.body}</h2>
+        <h3>{content.content.desc}</h3>
+      </div>
     </div>
   );
 }

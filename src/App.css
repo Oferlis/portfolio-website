@@ -301,7 +301,8 @@ h2 {
 }
 
 .form-div button {
-  background-color: #BDFFEF;
+  background-color: #00494D;
+  color: #FFFFED;
   border-radius: 25px;
   padding: 0.25rem;
   margin-top: 1rem;
@@ -314,10 +315,11 @@ h2 {
   height: 200px;
   padding: 20px;
   color: rgb(92, 96, 109);
-  background: linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  background: transparent;
   border: 0.5px solid transparent;
   border-radius: 8px;
-  border-color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: #00494D;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -552,7 +554,7 @@ h2 {
 .proj-img { 
   width: 100%;
   height: 40%;
-  border-bottom: 1px solid var(--gray, #BDFFEF);
+  border-bottom: 1px solid var(--gray, #00494D);
   
 }
 
@@ -590,11 +592,11 @@ h2 {
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;  
-  border-top: 1px solid var(--gray, #BDFFEF);
+  border-top: 1px solid var(--gray, #00494D);
 }
 
 .proj-item-body h2 {
-  color: var(--white, #FFFFED);
+  color: var(--white, #00494D);
   font-family: Fira Code;
   font-size: 24px;
   font-style: normal;
@@ -603,7 +605,7 @@ h2 {
   }
 
 .proj-item-body h3 {
-  text-align: flex-start;
+  text-align: left;
   color: var(--gray, #00494D);
   font-family: Fira Code;
   font-size: 16px;

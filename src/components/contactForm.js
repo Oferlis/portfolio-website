@@ -25,34 +25,32 @@ export default function ContactForm(props) {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col">
-      <div className="flex flex-col">
-        <label htmlFor="website-admin" className="">
-          Name
-        </label>
-        <div className="">
-          <input type="text" name="name" placeholder="Your name" />
-        </div>
-        <label htmlFor="email" className="">
-          Your Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          className=""
-          placeholder="you@your-domain.com"
-        />
+    <form ref={form} onSubmit={sendEmail} className="">
+      <label htmlFor="website-admin" className="">
+        Name
+      </label>
+      <div className="">
+        <input type="text" name="name" placeholder="Your name" />
+      </div>
+      <label htmlFor="email" className="">
+        Your Email
+      </label>
+      <input
+        type="email"
+        name="email"
+        className=""
+        placeholder="you@your-domain.com"
+      />
 
-        <div className="flex flex-col">
-          <label htmlFor="message" className="text-left">
-            {" "}
-            Message{" "}
-          </label>
-          <input type="text" name="message" required />
-        </div>
-        <div className="">
-          <button type="submit">Send</button>
-        </div>
+      <div className="flex flex-col">
+        <label htmlFor="message" className="text-left">
+          {" "}
+          Message{" "}
+        </label>
+        <input type="text" name="message" required />
+      </div>
+      <div className="">
+        <button type="submit">Send</button>
       </div>
     </form>
   );

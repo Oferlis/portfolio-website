@@ -1,6 +1,6 @@
 import genericProject from "./genericProject";
 
-const tech = ["Vue.js", "JS", "Chrome Extension"];
+const tech = ["Open-source", "Vue.js", "JS", "Chrome Extension"];
 const body = "Overlay";
 const img = "";
 const alt = "overlay";

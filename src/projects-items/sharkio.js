@@ -1,8 +1,8 @@
 import genericProject from "./genericProject";
 
-const tech = ["React", "NodeJS", "Express", "Docker"];
+const tech = ["Open-source", "React", "NodeJS", "Express", "Docker"];
 const body = "Sharkio";
-const img = "";
+const img = process.env.PUBLIC_URL + "/images/sharkio.png";
 const alt = "sharkio logo";
 const desc = "Developer tool, helps developers to track services requests";
 const link = "https://github.com/idodav/sharkio";

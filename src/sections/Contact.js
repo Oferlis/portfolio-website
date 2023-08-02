@@ -6,7 +6,7 @@ export default function Contact() {
   const [isFormSubmitted, setFormSubmitted] = useState(false);
 
   return (
-    <div id="contact" className="div-ex contact-div">
+    <div id="contact" className="contact-div">
       <SectionSeperator sectionName="Let's get together" />
       <div className="form-div">
         {isFormSubmitted ? (

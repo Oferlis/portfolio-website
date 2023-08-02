@@ -5,5 +5,13 @@ const body = "Portfolio site";
 const img = "";
 const alt = "Portfolio site";
 const desc = "My portfolio site, you're here!";
+const link = "https://github.com/Oferlis/portfolio-website";
 
-export const portfolioSite = new genericProject(tech, body, img, alt, desc);
+export const portfolioSite = new genericProject(
+  tech,
+  body,
+  img,
+  alt,
+  desc,
+  link
+);

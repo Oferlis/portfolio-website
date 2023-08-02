@@ -602,6 +602,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: pointer;
   }
 
 .proj-item-body h3 {

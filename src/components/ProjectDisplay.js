@@ -23,7 +23,9 @@ export default function ProjectDisplay(content) {
         </ul>
       </div>
       <div className="proj-item-body">
-        <h2>{content.content.body}</h2>
+        <h2 onClick={() => window.open(content.content.link)}>
+          {content.content.body}
+        </h2>
         <h3>{content.content.desc}</h3>
       </div>
     </div>

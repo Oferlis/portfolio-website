@@ -37,7 +37,7 @@ const Skills = () => {
             />
             <Container
               headline="Frameworks"
-              items={["React, Django", "NodeJS, Vue", "Express.js"]}
+              items={["React, Django", "NodeJS, Vue.js", "Express.js"]}
             />
           </div>
         </div>

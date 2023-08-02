@@ -468,7 +468,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width: 701px;
+  width: 80%;
   gap: 16px;
   margin-left: 171px;
 }
@@ -514,6 +514,28 @@ h2 {
   /* width: 200px; */
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.collapse-mobile {
+  @media (max-width: 768px) {
+    visibility: collapse;
+
+  }
+}
+
+.skills-mobile {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.skills-mobile .skills-mobile {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+  }
 }
 
 .container:first-child {

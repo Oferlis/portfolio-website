@@ -6,7 +6,7 @@ const Container = (props) => {
           <span className="highlight">{props.headline}</span>
         </h2>
       </div>
-      <ul className="container">
+      <ul className="container collapse-mobile">
         {props.items.map((item) => {
           return <li key={item}>{item}</li>;
         })}

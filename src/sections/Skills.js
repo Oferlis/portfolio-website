@@ -8,13 +8,13 @@ const Skills = () => {
     <div id="skills" className="skills">
       <SectionSeperator sectionName="Skills" />
       <div
-        className="row-div"
+        className="row-div skills-mobile"
         style={{ justifyContent: "center", gap: "100px" }}
       >
         <div style={{ position: "relative", width: 300, height: 300 }}>
           <Cube />
         </div>
-        <div className="placeholder">
+        <div className="placeholder skills-mobile">
           <div className="boxes">
             <Container
               headline="Languages"

@@ -39,7 +39,7 @@
 .nav-div {
   align-items: center;
   justify-content: space-between;
-  margin-left: 10rem;
+  margin-left: 5rem;
   margin-right: 5rem;
   width: 100%;  
 
@@ -52,7 +52,6 @@
 
 .align-center {
   align-items: center;
-  
 }
 
 .nav-list {
@@ -74,20 +73,11 @@
 }
 
 .nav-div button {
-  border: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
-  position: absolute;
-  right: 25px;
-  transform: translateY(-50%);
   display: none;
-
+  
   @media screen and (max-width: 768px) {
-      display: block;
+    display: block;
+    margin-left: 12rem;
   }
 }
 .navigation-menu {
@@ -210,6 +200,9 @@
   line-height: 25px; /* 156.25% */
   padding-left: 4rem;
   
+  @media screen and (max-width: 768px) {
+    padding-left: 1rem;
+  }
 }
 
 .about-h1 {
@@ -223,6 +216,9 @@
   line-height: normal;
   padding-left: 4rem;
   
+  @media screen and (max-width: 768px) {
+    padding-left: 1rem;
+  }
 }
 
 .about-h1 em {
@@ -259,6 +255,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 1rem;
+  }
 }
 
 h1 {
@@ -315,13 +315,11 @@ h2 {
   border-color: #00494D;
   border-width: 1px;
   height: 20rem;
-  width: 15rem;
+  width: 15rem; 
   text-align: center;
 
-  /* how should I display this in mobile???*/
-  @media (max-width: 768px) {
-    height: 10rem;
-    width: 10rem;
+  @media screen and (max-width: 768px) {
+    width: 40vh; 
   }
 }
 
@@ -336,6 +334,7 @@ h2 {
   border: 1px solid #00494D;
   border-radius: 25px;
   padding: 1rem;
+  margin-top: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -361,7 +360,6 @@ h2 {
 .form-div button {
   background-color: #00494D;
   color: #FFFFED;
-  border-radius: 25px;
   padding: 0.25rem;
   margin-top: 1rem;
   padding-left: 0.6rem;
@@ -421,6 +419,7 @@ h2 {
   flex: row;
   gap: 50px;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .sideButton {
@@ -456,29 +455,19 @@ h2 {
   border-bottom-right-radius: 40px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    visibility: hidden;
+
    }
 }
 
 .side-icon {
   width: 50px;
   height: 50px;
-
-  @media screen and (max-width: 767px) {
-   width: 30px; 
-  }
 }
 
 .side-icon-linkedin {
   width: 50px;
   height: 40px;
-  
-  @media screen and (max-width: 767px) {
-    width: 25px;
-    padding-left: 5px 
-   }
 }
 
 .logo {
@@ -645,7 +634,7 @@ h2 {
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
-
+  flex-wrap: wrap;
 }
 
 .proj-img { 

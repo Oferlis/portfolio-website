@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 
 import ProjectDisplay from "../components/ProjectDisplay";
 import { readingList } from "../projects-items/readingList";
@@ -17,23 +17,16 @@ export default function Projects() {
   //     setCarValue(e.target.value + 1);
   //   }
   // };
-  if (window.innerWidth > 768) {
-    return (
-      <div id="projects" className="proj-div">
-        <SectionSeperator sectionName="Projects" />
-        <div className="row-div proj-container">
-          <ProjectDisplay content={readingList} />
-          <ProjectDisplay content={sharkio} />
-          <ProjectDisplay content={overlay} />
-          <ProjectDisplay content={portfolioSite} />
-        </div>
+
+  return (
+    <div id="projects" className="proj-div">
+      <SectionSeperator sectionName="Projects" />
+      <div className="row-div proj-container">
+        <ProjectDisplay content={readingList} />
+        <ProjectDisplay content={sharkio} />
+        <ProjectDisplay content={overlay} />
+        <ProjectDisplay content={portfolioSite} />
       </div>
-    );
-  } else {
-    return (
-      <div id="projects" className="proj-div">
-        mobile view
-      </div>
-    );
-  }
+    </div>
+  );
 }

@@ -3,7 +3,7 @@
 ## My portfolio website codebase
 Built using React and Tailwind CSS 
 Deployed site:
-https://oferlis.github.io/portfolio-website/
+https://oferlis.github.io/portfolio/
 
 
 ### Getting started

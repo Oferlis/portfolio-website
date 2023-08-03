@@ -5,7 +5,7 @@ const body = "Portfolio site";
 const img = process.env.PUBLIC_URL + "/images/portfoliopic.png";
 const alt = "Portfolio site";
 const desc = "My portfolio site, you're here!";
-const link = "https://github.com/Oferlis/portfolio-website";
+const link = "https://github.com/Oferlis/portfolio";
 
 export const portfolioSite = new genericProject(
   tech,

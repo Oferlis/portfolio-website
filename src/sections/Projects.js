@@ -1,3 +1,5 @@
+// import { useState } from "react";
+
 import ProjectDisplay from "../components/ProjectDisplay";
 import { readingList } from "../projects-items/readingList";
 import { overlay } from "../projects-items/overlay";
@@ -6,57 +8,32 @@ import { portfolioSite } from "../projects-items/portfolioSite";
 import SectionSeperator from "../components/sectionSeperator";
 
 export default function Projects() {
-  // const [displayProject, setDisplayProject] = useState(readingList);
-  // let isSelected = false;
-  // const handleItemClicked = (item) => {
-  //   setDisplayProject(item);
-  //   isSelected = true;
+  // const [carValue, setCarValue] = useState(0);
+
+  // const handleCarInc = (e) => {
+  //   if (e.target.value === "4") {
+  //     setCarValue(0);
+  //   } else {
+  //     setCarValue(e.target.value + 1);
+  //   }
   // };
-
-  // return (
-  //   <div id="projects" className="div-ex row-div proj-div">
-  //     <div className="my-auto py-4 w-1/3">
-  //       <h1 className="md:text-4xl text-2xl mb-4 ">My Projects </h1>
-  //       <ul className="">
-  //         <li
-  //           className={`proj-list-item ${isSelected ? "selected" : ""}`}
-  //           onClick={() => handleItemClicked(readingList)}
-  //         >
-  //           Reading List
-  //         </li>
-  //         <li
-  //           className="proj-list-item"
-  //           onClick={() => handleItemClicked(overlay)}
-  //         >
-  //           Overlay
-  //         </li>
-  //         <li
-  //           className="proj-list-item"
-  //           onClick={() => handleItemClicked(sharkio)}
-  //         >
-  //           Sharkio
-  //         </li>
-  //         <li
-  //           className="proj-list-item"
-  //           onClick={() => handleItemClicked(portfolioSite)}
-  //         >
-  //           Portfolio site
-  //         </li>
-  //       </ul>
-  //     </div>
-  //     <ProjectDisplay content={displayProject} />
-  //   </div>
-  // );
-
-  return (
-    <div id="projects" className="proj-div">
-      <SectionSeperator sectionName="Projects" />
-      <div className="row-div proj-container">
-        <ProjectDisplay content={readingList} />
-        <ProjectDisplay content={sharkio} />
-        <ProjectDisplay content={overlay} />
-        <ProjectDisplay content={portfolioSite} />
+  if (window.innerWidth > 768) {
+    return (
+      <div id="projects" className="proj-div">
+        <SectionSeperator sectionName="Projects" />
+        <div className="row-div proj-container">
+          <ProjectDisplay content={readingList} />
+          <ProjectDisplay content={sharkio} />
+          <ProjectDisplay content={overlay} />
+          <ProjectDisplay content={portfolioSite} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div id="projects" className="proj-div">
+        mobile view
+      </div>
+    );
+  }
 }

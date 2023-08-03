@@ -7,10 +7,7 @@ const Skills = () => {
   return (
     <div id="skills" className="skills">
       <SectionSeperator sectionName="Skills" />
-      <div
-        className="row-div skills-mobile"
-        style={{ justifyContent: "center", gap: "100px" }}
-      >
+      <div className="skills-div">
         <div style={{ position: "relative", width: 300, height: 300 }}>
           <Cube />
         </div>

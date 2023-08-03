@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState("hidden");
+  const [showMenu, setShowMenu] = useState(true);
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -14,8 +14,8 @@ export default function Navbar() {
   });
 
   const isShowMenu = () => {
-    if (showMenu === "hidden") setShowMenu("");
-    else setShowMenu("hidden");
+    if (showMenu) setShowMenu(false);
+    else setShowMenu(true);
   };
 
   return (
@@ -30,9 +30,9 @@ export default function Navbar() {
           <p className="name-logo">Ofer Lis</p>
         </HashLink>
         <button
+          datacollaspe
           onClick={isShowMenu}
           type="button"
-          className="inline-flex md:items-center p-2text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:hover:bg-gray-700 dark:focus:rin"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -51,7 +51,10 @@ export default function Navbar() {
             ></path>
           </svg>
         </button>
-        <div className={showMenu + "md:block items-center"} id="navbar-default">
+        <div
+          className={showMenu ? "navigation-menu expanded" : "navigation-menu"}
+          id="navbar-default"
+        >
           <ul className="nav-list">
             <li>
               <HashLink
@@ -113,31 +116,6 @@ export default function Navbar() {
               >
                 <em>#</em>Say_hi
               </HashLink>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/ofer-lis/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img
-                  src={process.env.PUBLIC_URL + "/images/LinkedIn_icon.svg"}
-                  className="md:h-6 h-10 block py-2 md:py-0 pl-3 pr-4 "
-                  alt="my LinkedIn profile"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Oferlis"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <img
-                  src={process.env.PUBLIC_URL + "/images/github_icon.svg"}
-                  alt="my Github profile"
-                />
-              </a>
             </li>
           </ul>
         </div>

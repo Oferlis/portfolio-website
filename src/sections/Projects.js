@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import ProjectDisplay from "../components/ProjectDisplay";
 import { readingList } from "../projects-items/readingList";
 import { overlay } from "../projects-items/overlay";
@@ -8,16 +6,6 @@ import { portfolioSite } from "../projects-items/portfolioSite";
 import SectionSeperator from "../components/sectionSeperator";
 
 export default function Projects() {
-  // const [carValue, setCarValue] = useState(0);
-
-  // const handleCarInc = (e) => {
-  //   if (e.target.value === "4") {
-  //     setCarValue(0);
-  //   } else {
-  //     setCarValue(e.target.value + 1);
-  //   }
-  // };
-
   return (
     <div id="projects" className="proj-div">
       <SectionSeperator sectionName="Projects" />

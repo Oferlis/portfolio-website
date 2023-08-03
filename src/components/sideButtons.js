@@ -31,7 +31,7 @@ const SideButtons = (props) => {
       >
         <img
           className="side-icon"
-          src={process.env.PUBLIC_URL + "/svgs/Github.svg"}
+          src={process.env.PUBLIC_URL + "/svgs/github.svg"}
           alt="GitHub"
         />
       </button>

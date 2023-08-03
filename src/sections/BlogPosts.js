@@ -39,6 +39,6 @@ export default function BlogPosts() {
       </div>
     );
   } else {
-    return <div>blog posts div</div>;
+    return <div id="blog-posts">blog posts div</div>;
   }
 }

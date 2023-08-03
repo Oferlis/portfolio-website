@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 export default function About() {
   return (
     <div id="about" className="div-ex row-div about-div">
-      <div className="my-auto mx-auto py-4">
+      <div className="mt-8 md:my-auto md:mx-auto md:py-4">
         <h1 className="about-h1">
           <em>A full-stack Developer</em> building web solutions
           <br />
@@ -19,7 +19,7 @@ export default function About() {
           </HashLink>
         </button>
       </div>
-      <div className="my-auto mr-3">
+      <div>
         <img
           src={process.env.PUBLIC_URL + "/svgs/big-logo.svg"}
           alt="blob"

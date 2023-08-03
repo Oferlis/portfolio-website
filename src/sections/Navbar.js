@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export default function Navbar() {
               <HashLink
                 smooth
                 to="/#home"
-                onClick={() => setShowMenu("hidden")}
+                onClick={() => setShowMenu(false)}
                 aria-current="page"
               >
                 <em>#</em>
@@ -71,7 +71,7 @@ export default function Navbar() {
               <HashLink
                 smooth
                 to="/#about"
-                onClick={() => setShowMenu("hidden")}
+                onClick={() => setShowMenu(false)}
                 className="navbar-item"
               >
                 <em>#</em>About
@@ -81,7 +81,7 @@ export default function Navbar() {
               <HashLink
                 smooth
                 to="/#skills"
-                onClick={() => setShowMenu("hidden")}
+                onClick={() => setShowMenu(false)}
                 className="navbar-item"
               >
                 <em>#</em>Skills
@@ -91,7 +91,7 @@ export default function Navbar() {
               <HashLink
                 smooth
                 to="/#projects"
-                onClick={() => setShowMenu("hidden")}
+                onClick={() => setShowMenu(false)}
                 className="navbar-item"
               >
                 <em>#</em>Projects
@@ -101,7 +101,7 @@ export default function Navbar() {
               <HashLink
                 smooth
                 to="/#blog-posts"
-                onClick={() => setShowMenu("hidden")}
+                onClick={() => setShowMenu(false)}
                 className="navbar-item"
               >
                 <em>#</em>Blog_posts
@@ -111,7 +111,7 @@ export default function Navbar() {
               <HashLink
                 smooth
                 to="/#contact"
-                onClick={() => setShowMenu("hidden")}
+                onClick={() => setShowMenu(false)}
                 className="navbar-item"
               >
                 <em>#</em>Say_hi

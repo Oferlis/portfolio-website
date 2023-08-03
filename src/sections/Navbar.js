@@ -70,11 +70,11 @@ export default function Navbar() {
             <li>
               <HashLink
                 smooth
-                to="/#about"
+                to="/#aboutme"
                 onClick={() => setShowMenu(false)}
                 className="navbar-item"
               >
-                <em>#</em>About
+                <em>#</em>About_me
               </HashLink>
             </li>
             <li>

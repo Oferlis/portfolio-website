@@ -8,6 +8,7 @@ import "./App.css";
 import BlogPosts from "./sections/BlogPosts";
 import SideButtons from "./components/sideButtons";
 import Skills from "./sections/Skills";
+import AboutMe from "./sections/AboutMe";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               </g>
             </svg>
           </section>
+          <AboutMe />
           <Skills />
           <Projects />
           <BlogPosts />

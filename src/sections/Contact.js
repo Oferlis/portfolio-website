@@ -9,7 +9,7 @@ export default function Contact() {
     <div id="contact" className="contact-div">
       <SectionSeperator sectionName="Let's get together" />
       {isFormSubmitted ? (
-        <div className="w-3/4">Form Sent! we'll be in touch!</div>
+        <div className="form-div">Form Sent! we'll be in touch!</div>
       ) : (
         <ContactForm setSubmitted={setFormSubmitted} />
       )}

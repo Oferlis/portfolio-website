@@ -15,7 +15,7 @@ const AboutMe = () => {
         for a great career and life.
         <br /> <br /> When I'm not coding, you can find me running long
         distances,
-        <br /> watching a star-wars movie or planning my next project.
+        <br /> watching a Star Wars movie or planning my next project.
       </p>
     </div>
   );

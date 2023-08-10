@@ -182,7 +182,7 @@
 .about-div {
   background-color: #00494D;
   color: #032031;
-  height: 90vh;
+  height: 75vh;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 200;
 
@@ -233,6 +233,8 @@
 .about-image {
   width: 60vh;
   height: 70vh;
+  object-fit: none;
+  position: relative;
 
   @media screen and (max-width: 768px) {
     visibility: collapse;
@@ -606,7 +608,7 @@ h2 {
 }
 
 .container .highlight {
-  background: linear-gradient(120deg, #e4a0a1 0%, #e4a0a1 100%);
+  background: linear-gradient(120deg, rgba(255, 138, 68, 0.5) 0%, rgba(255, 138, 68, 0.5) 100%);
   background-repeat: no-repeat;
   background-size: 100% 40%;
   background-position: 0 90%;

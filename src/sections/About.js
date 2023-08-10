@@ -21,7 +21,7 @@ export default function About() {
       </div>
       <div>
         <img
-          src={process.env.PUBLIC_URL + "/svgs/big-logo.svg"}
+          src={process.env.PUBLIC_URL + "/images/about-pic.png"}
           alt="blob"
           className="about-image"
         />

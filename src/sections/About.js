@@ -3,15 +3,16 @@ import { HashLink } from "react-router-hash-link";
 export default function About() {
   return (
     <div id="about" className="div-ex row-div about-div">
-      <div className="mt-8 md:my-auto md:mx-auto md:py-4">
+      <div className="mt-8 md:my-auto md:mx-10 md:py-4">
         <h1 className="about-h1">
-          <em>A full-stack Developer</em> building web solutions
+          <em>A full-stack Developer</em> building products
           <br />
           with a passion for
           <em> innovation</em> & <em>problem-solving.</em>
         </h1>
         <p className="about-par">
-          I craft responsive websites where technologies meet creativity.
+          I craft end-to-end Software and Web solutions,
+          <br /> where technology meets creativity
         </p>
         <button className="about-button">
           <HashLink smooth to="/#contact" className="navbar-item">

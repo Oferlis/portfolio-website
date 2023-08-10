@@ -43,7 +43,7 @@
   margin-right: 5rem;
   width: 100%;  
 
-  @media (max-width: 768px) {
+  @media (max-width: 844px) {
     margin-left: 1rem;
     margin-right: 0rem;
 
@@ -61,7 +61,7 @@
   width: 70%;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 884px) {
     flex-direction: column;
     width: 100%;
     position: absolute;
@@ -75,7 +75,7 @@
 .nav-div button {
   display: none;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 884px) {
     display: block;
     margin-left: 12rem;
   }
@@ -87,7 +87,7 @@
 .navigation-menu ul {
   padding: 0;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 884px) {
     display: none;
     position: absolute;
     top: 60px;
@@ -104,7 +104,7 @@
 
 .navigation-menu.expanded ul {
   display: flex;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 884px) {
     display: block;
     position: fixed;
   }
@@ -119,7 +119,7 @@
   display: block;
   width: 100%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 884px) {
     color: #FFFFED;
     width: 100%;
     padding: 0.5rem 0;
@@ -140,7 +140,7 @@
   text-decoration: none;
   margin-right: 35px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 884px) {
     text-align: center;
     padding: 5px;
   }
@@ -156,7 +156,7 @@
 }
 
 .nav-list li::after {
-  @media  screen and (min-width: 768px) { 
+  @media  screen and (min-width: 884px) { 
     content: "";
     position: absolute;
     bottom: 0;
@@ -186,8 +186,8 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: 200;
 
-  @media screen and (max-width: 767px) {
-    height: 70vh;
+  @media screen and (max-width: 884px) {
+    height: 90vh;
   }
 }
 
@@ -200,7 +200,7 @@
   line-height: 25px; /* 156.25% */
   padding-left: 4rem;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 884px) {
     padding-left: 1rem;
   }
 }
@@ -216,7 +216,7 @@
   line-height: normal;
   padding-left: 4rem;
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 884px) {
     padding-left: 1rem;
   }
 }
@@ -235,11 +235,14 @@
   height: 70vh;
   object-fit: none;
   position: relative;
+  margin-left: 10vh;
+  margin-right: 5rem;
 
   @media screen and (max-width: 768px) {
     visibility: collapse;
     width: 0px;
   }
+  
 }
 
 .about-button {
@@ -743,4 +746,44 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: 26px; /* 162.5% */
+  @media (max-width: 844px) {
+    margin-left: 3rem;
+    width: 80%
   }
+
+  }
+
+  /* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -45px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

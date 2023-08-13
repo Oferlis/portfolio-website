@@ -20,7 +20,7 @@ export default function About() {
           </HashLink>
         </button>
       </div>
-      <div>
+      <div className="about-img-div">
         <img
           src={process.env.PUBLIC_URL + "/images/about-pic-ofer.png"}
           alt="blob"

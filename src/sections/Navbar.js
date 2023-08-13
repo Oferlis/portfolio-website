@@ -23,9 +23,9 @@ export default function Navbar() {
       <div id="home" className="row-div nav-div">
         <HashLink smooth to="/#home" className="row-div align-center">
           <img
-            src={process.env.PUBLIC_URL + "/svgs/OL-logo.svg"}
+            src={process.env.PUBLIC_URL + "/images/logo.png"}
             alt="me"
-            className="h-8 mr-3"
+            className="h-16 mr-3"
           />
           <p className="name-logo">Ofer Lis</p>
         </HashLink>

@@ -232,18 +232,24 @@
 }
 
 .about-image {
-  width: 60vh;
+  width: 40vh;
   height: 70vh;
-  object-fit: none;
-  position: relative;
+  object-fit: scale-down;
+  position: none;
   margin-left: 10vh;
   margin-right: 5rem;
 
-  @media screen and (max-width: 768px) {
-    visibility: collapse;
+  @media screen and (max-width: 885px) {
+    visibility: collapse; 
     width: 0px;
-  }
-  
+  } 
+}
+
+.about-img-div {
+  @media screen and (max-width: 885px) {
+    visibility: collapse; 
+    width: 0px;
+  } 
 }
 
 .about-button {

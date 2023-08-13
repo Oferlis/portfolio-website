@@ -26,12 +26,12 @@ export default function BlogPosts() {
         </div>
         <div className="card">
           <div className="main-content">
-            <p className="heading">upcoming...</p>
+            <p className="heading">Coming soon...</p>
           </div>
         </div>
         <div className="card">
           <div className="main-content">
-            <p className="heading">Upcoming...</p>
+            <p className="heading">Coming soon...</p>
           </div>
         </div>
       </div>

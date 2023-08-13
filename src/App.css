@@ -1,5 +1,5 @@
 .div-ex {
-  padding-left: 1.5rem/* 24px */;
+  /* padding-left: 1.5rem; */
   padding-right: 1.5rem/* 24px */;
   align-items: flex-start;
   font-family: Montserrat;
@@ -8,7 +8,7 @@
   background-color: rgb(201 228 235 / var(--tw-bg-opacity));
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 884px) {
         width: 100%;
 
         height: auto;
@@ -200,6 +200,7 @@
   font-weight: 400;
   line-height: 25px; /* 156.25% */
   padding-left: 4rem;
+  flex-wrap: wrap;
   
   @media screen and (max-width: 884px) {
     padding-left: 1rem;
@@ -532,7 +533,15 @@ h2 {
 }
 
 .section-seperator-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 7rem;
   background-color: #FFFFED;
+
+  @media (max-width: 884px) {
+    margin-left: 10px
+  }
+  
 }
 
 .section-seperator {
@@ -546,11 +555,7 @@ h2 {
   line-height: normal;
   width: 80%;
   gap: 16px;
-  margin-left: 171px;
 
-  @media (max-width: 768px) {
-    margin-left: 10px
-  }
 }
 
 .section-seperator em {
@@ -570,8 +575,9 @@ h2 {
 
 .skills{
   background-color: #FFFFED;
-  padding: 50px;
   height: fit-content;
+  padding-bottom: 50px;
+  padding-top: 50px;
 
 }
 
@@ -590,8 +596,6 @@ h2 {
   color: #00494D;
   align-items: flex-start;
   gap: 8px;
-  /* border: 1px solid var(--gray, #BDFFEF);  */
-  /* width: 200px; */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -601,15 +605,16 @@ h2 {
   gap: 100px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 884px) {
     flex-direction: column;
     gap: 10px
   }
 }
 
 .skills-div .skills-mobile {
-  @media (max-width: 768px) {
+  @media (max-width: 884px) {
     display: flex;
     flex-direction: column;
     gap: 5px

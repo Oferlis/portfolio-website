@@ -11,8 +11,8 @@ export default function About() {
           <em> innovation</em> & <em>problem-solving.</em>
         </h1>
         <p className="about-par">
-          I craft end-to-end Software and Web solutions,
-          <br /> where technology meets creativity
+          I craft end-to-end Software and Web solutions, where technology meets
+          creativity
         </p>
         <button className="about-button">
           <HashLink smooth to="/#contact" className="navbar-item">

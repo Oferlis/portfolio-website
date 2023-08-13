@@ -181,6 +181,7 @@
 
 .about-div {
   background-color: #00494D;
+  justify-content: center;
   color: #032031;
   height: 75vh;
   font-family: 'Ubuntu', sans-serif;

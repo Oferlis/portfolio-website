@@ -13,8 +13,8 @@ const AboutMe = () => {
         <br /> <br />
         Constant learning and improving is my passion, and I believe it is key
         for a great career and life.
-        <br /> <br /> When I'm not coding, you can find me running,
-        <br /> watching a Star Wars movie or planning my next project.
+        <br /> <br /> When I'm not coding, you can find me running, watching a
+        Star Wars movie or planning my next project.
       </p>
     </div>
   );

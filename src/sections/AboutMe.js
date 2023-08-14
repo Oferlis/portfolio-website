@@ -7,7 +7,7 @@ const AboutMe = () => {
       <p>
         Hey, I'm Ofer!
         <br />
-        <br />I am a Full-stack developer, based in Israel. I develop software
+        <br />I am a Full-stack Developer, based in Israel. I develop software
         and web applications from scratch into user-friendly experiences, using
         the latest technologies and languages.
         <br /> <br />

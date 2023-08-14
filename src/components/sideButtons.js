@@ -26,7 +26,7 @@ const SideButtons = (props) => {
     <div className="sideButtonGroup">
       <button
         className="sideButton"
-        onClick={handleScrollToTop}
+        onClick={() => window.open("https://github.com/Oferlis")}
         title="Scroll to Top"
       >
         <img
@@ -37,7 +37,7 @@ const SideButtons = (props) => {
       </button>
       <button
         className="sideButton"
-        onClick={window.open("https://github.com/Oferlis")}
+        onClick={() => window.open("https://www.linkedin.com/in/ofer-lis/")}
         title="Github"
       >
         <img
@@ -49,7 +49,7 @@ const SideButtons = (props) => {
       {showButton && (
         <button
           className="sideButton"
-          onClick={() => window.open("https://www.linkedin.com/in/ofer-lis/")}
+          onClick={handleScrollToTop}
           title="LinkedIn"
         >
           ↑

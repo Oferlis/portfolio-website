@@ -5,7 +5,7 @@ export default function About() {
     <div id="about" className="div-ex row-div about-div">
       <div className="mt-8 md:my-auto md:mx-10 md:py-4">
         <h1 className="about-h1">
-          <em>A full-stack Developer</em> building products
+          <em>A Full-stack Developer</em> building products
           <br />
           with a passion for
           <em> innovation</em> & <em>problem-solving.</em>

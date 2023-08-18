@@ -320,7 +320,7 @@ h2 {
   background-color: #FFFFED;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 .proj-display {
@@ -431,8 +431,9 @@ h2 {
   justify-content: center;
   flex: row;
   gap: 50px;
-  margin-top: 1rem;
   flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .sideButton {

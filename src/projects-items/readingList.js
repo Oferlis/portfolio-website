@@ -1,6 +1,6 @@
 import genericProject from "./genericProject";
 
-const tech = ["React", "NodeJS", "Express", "MongoDB"];
+const tech = ["React", "NodeJS", "Express", "MongoDB", "JWT"];
 const body = "Reading List";
 const img = process.env.PUBLIC_URL + "/images/readinglist.png";
 const alt = "reading list logo";

@@ -24,9 +24,22 @@ export default function BlogPosts() {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div
+          className="card"
+          onClick={() =>
+            window.open(
+              "https://dev.to/oferlis/history-lesson-what-are-class-components-4pga"
+            )
+          }
+        >
           <div className="main-content">
-            <p className="heading">Coming soon...</p>
+            <p className="heading">
+              History lesson: what are class components in React?
+            </p>
+            <div className="categories">
+              <span>Frontend</span>
+              <span>React</span>
+            </div>
           </div>
         </div>
         <div className="card">
